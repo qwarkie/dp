@@ -1,0 +1,13 @@
+/* Mixin & Vars */
+@import 'utils/variables/theme';
+@import 'utils/normalize';
+@import 'utils/mixins/images';
+
+/* Component styles */
+@import 'components/preloader';
+@import 'components/navbar';
+@import 'components/flipcard';
+
+/* Layout and sections styles */
+@import 'layout/header';
+@import 'layout/footer';
