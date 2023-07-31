@@ -13,9 +13,11 @@
   border-radius: 50%;
   text-align: center;
   z-index: 10;
+  color: #000;
   transform: rotate(-90deg);
   transition: .3s linear background, .3s linear color, .3s linear border, .3s linear box-shadow;
-
+  -webkit-text-size-adjust: unset;
+  
   @include respond-to(desktop){
     width: 55px;
     height: 55px;
