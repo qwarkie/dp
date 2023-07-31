@@ -1,6 +1,8 @@
 /* Mixin & Vars */
 @import 'utils/variables/theme';
+@import 'utils/variables/breakpoints';
 @import 'utils/normalize';
+@import 'utils/mixins/respond';
 @import 'utils/mixins/images';
 
 /* Component styles */
