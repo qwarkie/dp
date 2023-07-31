@@ -1,0 +1,23 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "assets/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "assets/css"
+    }
+  ],
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 10 versions"],
+  "liveSassCompile.settings.generateMap": false,
+  "liveServer.settings.port": 5100,
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
