@@ -1,0 +1,31 @@
+.to-top-btn{
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  line-height: 1;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+  background-color: #6363635c;
+  padding-bottom: 6px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 10;
+  transform: rotate(-90deg);
+  transition: .3s linear background, .3s linear color, .3s linear border, .3s linear box-shadow;
+
+  @include respond-to(desktop){
+    width: 55px;
+    height: 55px;
+    font-size: 35px;
+    padding-bottom: 8px;
+  }
+}
+.to-top-btn:hover {
+  background: #191d2196;
+  color: #ffffff;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 0px 4px 2px var(--primary-color)
+}
