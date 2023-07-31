@@ -17,6 +17,8 @@
   transform: rotate(-90deg);
   transition: .3s linear background, .3s linear color, .3s linear border, .3s linear box-shadow;
   -webkit-text-size-adjust: unset;
+  box-sizing: border-box;
+  font-size-adjust: none;
   
   @include respond-to(desktop){
     width: 55px;

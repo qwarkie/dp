@@ -157,6 +157,7 @@ body {
 }
 .header-bar .nav-logo {
   height: calc(var(--header-height) - 20px);
+  width: 45px;
   position: relative;
 }
 .header-bar .nav-logo img {
@@ -310,6 +311,9 @@ nav.navbar .nav-link.active:hover {
   -webkit-transition: 0.3s linear background, 0.3s linear color, 0.3s linear border, 0.3s linear box-shadow;
   transition: 0.3s linear background, 0.3s linear color, 0.3s linear border, 0.3s linear box-shadow;
   -webkit-text-size-adjust: unset;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size-adjust: none;
 }
 @media screen and (min-width: 1280px) {
   .to-top-btn {
