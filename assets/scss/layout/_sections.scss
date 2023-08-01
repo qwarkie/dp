@@ -6,8 +6,11 @@
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 var(--section-mobile-padding);
     height: inherit;
+    @include respond-to(desktop){
+      padding: 0 var(--section-desktop-padding);
+    }
   }
 
   &-header {

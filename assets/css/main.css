@@ -15,6 +15,8 @@
   --responsive-index: (1vw + 1vh);
   --header-height: 80px;
   --section-header-size: 24px;
+  --section-mobile-padding: 30px;
+  --section-desktop-padding: 40px;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -142,7 +144,7 @@ body {
 .header-bar {
   width: 100%;
   height: var(--header-height);
-  padding: 0 25px;
+  padding: 0 var(--section-mobile-padding);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,6 +156,11 @@ body {
           align-items: center;
   position: fixed;
   z-index: 1000;
+}
+@media screen and (min-width: 1280px) {
+  .header-bar {
+    padding: 0 var(--section-desktop-padding);
+  }
 }
 .header-bar .nav-logo {
   height: calc(var(--header-height) - 20px);
@@ -305,15 +312,16 @@ nav.navbar .nav-link.active:hover {
   text-align: center;
   z-index: 10;
   color: #000;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-transition: 0.3s linear background, 0.3s linear color, 0.3s linear border, 0.3s linear box-shadow;
-  transition: 0.3s linear background, 0.3s linear color, 0.3s linear border, 0.3s linear box-shadow;
-  -webkit-text-size-adjust: unset;
+  -webkit-transition: 0.3s linear background-color, 0.3s linear background-image, 0.3s linear color, 0.3s linear border, 0.3s linear box-shadow;
+  transition: 0.3s linear background-color, 0.3s linear background-image, 0.3s linear color, 0.3s linear border, 0.3s linear box-shadow;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size-adjust: none;
+  background-repeat: no-repeat;
+  background-image: url(../images/icons/arrow-black.png);
+  background-size: 15px 10px;
+  background-position: center center;
+  -webkit-text-size-adjust: 0%;
+  font-size-adjust: 0%;
 }
 @media screen and (min-width: 1280px) {
   .to-top-btn {
@@ -325,7 +333,8 @@ nav.navbar .nav-link.active:hover {
 }
 
 .to-top-btn:hover {
-  background: rgba(25, 29, 33, 0.5882352941);
+  background-color: rgba(25, 29, 33, 0.5882352941);
+  background-image: url(../images/icons/arrow.png);
   color: #ffffff;
   border: 1px solid var(--primary-color);
   -webkit-box-shadow: 0px 0px 4px 2px var(--primary-color);
@@ -340,7 +349,7 @@ nav.navbar .nav-link.active:hover {
 }
 .header-section .intro-box {
   position: absolute;
-  bottom: 10vh;
+  bottom: 15vh;
 }
 .header-section .intro-heading {
   font-weight: 700;
@@ -386,8 +395,13 @@ nav.navbar .nav-link.active:hover {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 var(--section-mobile-padding);
   height: inherit;
+}
+@media screen and (min-width: 1280px) {
+  .section-container {
+    padding: 0 var(--section-desktop-padding);
+  }
 }
 .section-header {
   text-align: center;
