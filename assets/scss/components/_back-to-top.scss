@@ -14,11 +14,14 @@
   text-align: center;
   z-index: 10;
   color: #000;
-  transform: rotate(-90deg);
-  transition: .3s linear background, .3s linear color, .3s linear border, .3s linear box-shadow;
-  -webkit-text-size-adjust: unset;
+  transition: .3s linear background-color,.3s linear background-image, .3s linear color, .3s linear border, .3s linear box-shadow;
   box-sizing: border-box;
-  font-size-adjust: none;
+  background-repeat: no-repeat;
+  background-image: url(../images/icons/arrow-black.png);
+  background-size: 15px 10px;
+  background-position: center center;
+  -webkit-text-size-adjust: 0%;
+  font-size-adjust: 0%;
   
   @include respond-to(desktop){
     width: 55px;
@@ -28,8 +31,9 @@
   }
 }
 .to-top-btn:hover {
-  background: #191d2196;
+  background-color: #191d2196;
+  background-image: url(../images/icons/arrow.png);
   color: #ffffff;
   border: 1px solid var(--primary-color);
-  box-shadow: 0px 0px 4px 2px var(--primary-color)
+  box-shadow: 0px 0px 4px 2px var(--primary-color);
 }

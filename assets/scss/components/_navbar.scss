@@ -1,12 +1,15 @@
 .header-bar{
 	width: 100%;
 	height: var(--header-height);
-	padding: 0 25px;
+	padding: 0 var(--section-mobile-padding);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
 	z-index: 1000;
+    @include respond-to(desktop){
+        padding: 0 var(--section-desktop-padding);
+    }
 
     .nav-logo{
         height: calc(var(--header-height) - 20px);
