@@ -168,10 +168,11 @@ body {
   position: relative;
 }
 .header-bar .nav-logo img {
-  height: 100%;
-  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 .header-bar .nav-filter {
   width: 100%;
@@ -358,6 +359,7 @@ nav.navbar .nav-link.active:hover {
 }
 .header-section .intro-subheading {
   font-size: calc(var(--responsive-index) * 1.5);
+  color: #fff;
 }
 
 .hero-links {
